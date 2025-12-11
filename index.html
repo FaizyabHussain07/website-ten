@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VogueStyle | Trendy Fashion Store</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">VOGUE<span>STYLE</span></a>
+            
+            <div class="d-flex order-lg-2">
+                <a href="#" class="nav-icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="nav-icon-link"><i class="far fa-heart"></i></a>
+                <a href="#" class="nav-icon-link position-relative">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="badge rounded-pill badge-cart">2</span>
+                </a>
+                <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#new-arrivals">New Arrivals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lookbook">Lookbook</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sale">Sale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1470&auto=format&fit=crop')">
+                <div class="container h-100 d-flex align-items-center justify-content-start">
+                    <div class="hero-caption">
+                        <h5 class="text-pink text-uppercase letter-spacing-2 mb-3">Spring Collection 2023</h5>
+                        <h1 class="display-3 mb-4">Fashion <br>That Speaks</h1>
+                        <a href="#new-arrivals" class="btn btn-fashion">Shop The Look</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1470&auto=format&fit=crop')">
+                <div class="container h-100 d-flex align-items-center justify-content-end">
+                    <div class="hero-caption text-end">
+                        <h5 class="text-pink text-uppercase letter-spacing-2 mb-3">New Arrivals</h5>
+                        <h1 class="display-3 mb-4">Urban <br>Elegance</h1>
+                        <a href="#new-arrivals" class="btn btn-fashion">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Category Grid -->
+    <section id="categories" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="cat-item">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop" class="cat-img" alt="Women">
+                        <div class="cat-overlay">
+                            <h4>Women's</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cat-item">
+                        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=800&auto=format&fit=crop" class="cat-img" alt="Men">
+                        <div class="cat-overlay">
+                            <h4>Men's</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cat-item">
+                        <img src="https://images.unsplash.com/photo-1624823183493-ed5832f48f18?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="cat-img" alt="Accessories">
+                        <div class="cat-overlay">
+                            <h4>Accessories</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section id="new-arrivals" class="section-padding pt-0">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-pink text-uppercase letter-spacing-2">Trending</h5>
+                <h2>New Arrivals</h2>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <span class="sale-badge">New</span>
+                            <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?q=80&w=800&auto=format&fit=crop" class="product-img" alt="Dress">
+                            <div class="product-actions">
+                                <button class="product-action-btn"><i class="far fa-heart"></i></button>
+                                <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                                <button class="product-action-btn"><i class="far fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <h5 class="mb-1" style="font-size: 1rem;">Velvet Evening Dress</h5>
+                            <p class="text-pink fw-bold">$129.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop" class="product-img" alt="Jacket">
+                            <div class="product-actions">
+                                <button class="product-action-btn"><i class="far fa-heart"></i></button>
+                                <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                                <button class="product-action-btn"><i class="far fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <h5 class="mb-1" style="font-size: 1rem;">Denim Jacket</h5>
+                            <p class="text-pink fw-bold">$89.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <span class="sale-badge bg-dark">Sale</span>
+                            <img src="https://images.unsplash.com/photo-1763558990091-bdc2dc084fb6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-img" alt="Top">
+                            <div class="product-actions">
+                                <button class="product-action-btn"><i class="far fa-heart"></i></button>
+                                <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                                <button class="product-action-btn"><i class="far fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <h5 class="mb-1" style="font-size: 1rem;">Summer Floral Top</h5>
+                            <p class="text-pink fw-bold"><span class="text-muted text-decoration-line-through me-2">$59.00</span>$39.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop" class="product-img" alt="Dress">
+                            <div class="product-actions">
+                                <button class="product-action-btn"><i class="far fa-heart"></i></button>
+                                <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                                <button class="product-action-btn"><i class="far fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <h5 class="mb-1" style="font-size: 1rem;">Maxi Boho Dress</h5>
+                            <p class="text-pink fw-bold">$99.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-fashion">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sale / Deal Section -->
+    <section id="sale" class="deal-section text-center">
+        <div class="container">
+            <h5 class="text-pink text-uppercase letter-spacing-2">Deal Of The Week</h5>
+            <h2 class="display-4 mb-4">Summer Collection <br>Up To 50% Off</h2>
+            
+            <div class="my-5">
+                <div class="countdown-item">
+                    <div class="countdown-number">02</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">14</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">35</div>
+                    <div class="countdown-label">Mins</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">20</div>
+                    <div class="countdown-label">Secs</div>
+                </div>
+            </div>
+            
+            <a href="#new-arrivals" class="btn btn-fashion">Shop Sale Now</a>
+        </div>
+    </section>
+
+    <!-- Lookbook / Gallery -->
+    <section id="lookbook" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-pink">Inspiration</h5>
+                <h2>Lookbook 2023</h2>
+            </div>
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-md-4 col-6">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop" class="lookbook-img" alt="Look 1">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="https://images.unsplash.com/photo-1529139574466-a302c27e3844?q=80&w=800&auto=format&fit=crop" class="lookbook-img" alt="Look 2">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop" class="lookbook-img" alt="Look 3">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=800&auto=format&fit=crop" class="lookbook-img" alt="Look 4">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?q=80&w=800&auto=format&fit=crop" class="lookbook-img" alt="Look 5">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?q=80&w=800&auto=format&fit=crop" class="lookbook-img" alt="Look 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Why Us -->
+    <section class="section-padding bg-light-pink">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-3">
+                    <i class="fas fa-shipping-fast fa-2x mb-3 text-pink"></i>
+                    <h5 class="text-uppercase" style="font-size: 1rem;">Free Shipping</h5>
+                    <p class="text-muted small">On orders over $100</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-undo fa-2x mb-3 text-pink"></i>
+                    <h5 class="text-uppercase" style="font-size: 1rem;">Easy Returns</h5>
+                    <p class="text-muted small">30 days exchange policy</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-lock fa-2x mb-3 text-pink"></i>
+                    <h5 class="text-uppercase" style="font-size: 1rem;">Secure Payment</h5>
+                    <p class="text-muted small">100% secure checkout</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-headset fa-2x mb-3 text-pink"></i>
+                    <h5 class="text-uppercase" style="font-size: 1rem;">24/7 Support</h5>
+                    <p class="text-muted small">We are here to help</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / Contact -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <i class="far fa-envelope fa-3x text-pink mb-4"></i>
+                    <h2 class="mb-3">Subscribe To Our Newsletter</h2>
+                    <p class="text-muted mb-4">Sign up for the latest news, offers and styles.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control rounded-0 p-3" placeholder="Your Email Address">
+                        <button class="btn btn-fashion">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="navbar-brand text-white d-block mb-3" style="font-size: 1.5rem;">VOGUE<span>STYLE</span></a>
+                    <p class="small">Fashion is part of the daily air and it does not change all the time, with all the events. You can even see the approaching of a revolution in clothes.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Shop</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Women</a></li>
+                        <li class="mb-2"><a href="#">Men</a></li>
+                        <li class="mb-2"><a href="#">Accessories</a></li>
+                        <li class="mb-2"><a href="#">Shoes</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Information</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">About Us</a></li>
+                        <li class="mb-2"><a href="#">Contact Us</a></li>
+                        <li class="mb-2"><a href="#">Terms & Conditions</a></li>
+                        <li class="mb-2"><a href="#">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact</h5>
+                    <p class="small mb-2">123 Fashion Ave, New York, NY 10001</p>
+                    <p class="small mb-2">+1 234 567 8900</p>
+                    <p class="small mb-4">support@voguestyle.com</p>
+                    <div>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-5 mt-5 border-top border-secondary">
+                <small>&copy; 2023 VogueStyle Fashion. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Masonry JS for Gallery (Optional logic via script tag if needed, but CSS masonry mostly handled) -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" async></script>
+</body>
+</html>
